@@ -30,4 +30,13 @@
     "popups": "^1.1.3"
   },
   "devDependencies": {},
-  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LandEcreation/bbcartcompetition.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LandEcreation/bbcartcompetition/issues"
+  },
+  "homepage": "https://github.com/LandEcreation/bbcartcompetition",
+  "description": ""
+}
