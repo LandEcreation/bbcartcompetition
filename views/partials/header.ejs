@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Banke bardiya Art competition</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Archivo+Black&family=Montserrat&display=swap" rel="stylesheet">
+  <style>
+    #more {
+      display: none;
+    }
+  </style>
+</head>
+
+
+<body>
+
+
+  <div class="header">
+
+      <h2 class="common-heading-h2">
+        Welcome to Banke Bardiya Complex Art/photo Competition </h2>
+
+      <p class="header-p"> This is one of the community participation program under the project entitled,
+        <i> <a href="https://www.rufford.org/projects/sagar-raj-kandel/working-communities-banke-bardia-complex-reduce-human-carnivore-conflicts/" target="_blank">
+            Working with communities
+
+          </a> </i><span id="dots"></span><span id="more"> <i> <a href="https://www.rufford.org/projects/sagar-raj-kandel/working-communities-banke-bardia-complex-reduce-human-carnivore-conflicts/">
+              in the Banke-Bardia complex to reduce human-carnivore conflicts. </a> </i> If you have any queries
+          regarding this call, please mail us to <a href="mailto: peace_ocean88@yahoo.com" type="email"> <b>peace_ocean88@yahoo.com</b>.</a>
+          Your photos and drawings will
+          be used to produce project materials in future with your copyright. Once you submit
+          us, we will acknowledge your submission within a week. Final top three
+          candidates from each category will be notified by mail or mobile number.</span>
+        <a onclick="myFunction()" id="myBtn" class="readmore">Read more</a>
+          </p>
+
+
+  </div>
+
+
+  <div class="notice">
+    <p> This call is only for the residents of banke bardia complex which includes banke, bardia and other buffer zone touch districts by Banke National Park and Bardia National Park.
+    </p>
+  </div>
+
+
+
+
+  <script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+      }
+    }
+  </script>

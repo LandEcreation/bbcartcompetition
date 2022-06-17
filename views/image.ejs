@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="/css/index.css">
+<%- include("partials/header") -%>
+
+
+<div class="image-container">
+
+
+  <h2> Uploaded by: <%=fullname%> </h2>
+  <hr />
+
+
+
+
+    <img class="single-img" src="data:image/<%=imagetype%>;base64, <%=imgdata %>" alt="imagenotfound">
+<div class="card">
+
+
+
+    <div class="card-body animate-card-text">
+      <h5 class="card-title"> <b> Image Title: </b><%=name %></h5>
+      <p class="card-text"> <b> Image Description: </b><%= desc %></p>
+      <p class="card-text"> <b> Name: </b><%=fullname %> </p>
+      <p class="card-text"> <b> Email: </b><%= email %> </p>
+      <p class="card-text"> <b> Phone: </b><%=number%> </p>
+
+      <p class="card-text"> <b> District: </b><%=district%> </p>
+      <p class="card-text"> <b> Municipality name: </b><%=municipalityname%> </p>
+      <p class="card-text"> <b> Ward number </b><%=wardno%> </p>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+<%- include("partials/footer") -%>

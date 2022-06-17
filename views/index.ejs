@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Welcome to banke bardia complex </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Archivo+Black&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+
+<%- include("partials/header"); -%>
+
+<div class="row  home-container">
+  <div class="col-lg-6 participate">
+      <p class="participatebtn"><a href="/upload" class="btn btn-lg"> Participate now! </a> </p>
+      <div class="adminonly" hidden>
+        <a class="btn btn-dark btn-lg" href="/login" role="button">Login </a>
+        <a class="btn btn-dark btn-lg" href="/logout" role="button">Logout </a>
+      </div>
+
+
+  </div>
+
+
+  <div class="col-lg-6 prize">
+    <h3 class="common-heading-h3"> For both category and token of love </h3>
+    <div class="tokentable">
+      <img src="/Images/nobgprize.png" alt="">
+      <table class="prizetable">
+        <tr>
+          <th>1st
+          </th>
+          <td>Rs.10,000</td>
+        </tr>
+        <tr>
+          <th>2nd </th>
+          <td>Rs.7,000</td>
+        </tr>
+        <tr>
+          <th>3rd</th>
+          <td>Rs.3,000</td>
+        </tr>
+      </table>
+
+
+    </div>
+  </div>
+
+
+
+</div>
+
+
+
+
+<h2 class="common-heading-h2">Supported By</h2>
+
+<div class="flex-container sponsor">
+  <div>
+    <a href="/images/RFlogo.jpg"> <img class="logo1" src="/images/RFlogo.jpg" alt="The Rufford foundation "> </a>
+  </div>
+
+  <div>
+    <a href="/images\NTNClogo.png"> <img class="logo" src="/images\NTNClogo.png" alt="The National trust for nature conservation "> </a>
+  </div>
+
+  <div>
+    <a href="/images\bardialogo.jpg"> <img class="logo" src="/images/bardialogo.jpg" alt="Bardia"> </a>
+  </div>
+
+
+  <div>
+    <a href="/images\bankelogo.jpg"> <img class="logo" src="/images/bankelogo.jpg" alt="Banke"> </a>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+<%- include("partials/footer"); -%>

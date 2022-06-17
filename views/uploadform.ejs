@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Image Uploading</title>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+
+<%- include("partials/header"); -%>
+
+
+<body>
+
+	<div class="mainheading">
+				<h2 class="second-heading">  Be the part of competition</h2>
+
+		<p>Please fill up the application form below and click submit. </p>
+		<hr>
+	</div>
+
+	<form class="row detailsform form-row" action="/" method="POST" enctype="multipart/form-data">
+
+		<h2 class="second-heading"> Details about you</h2>
+		<hr>
+		<div class="col-md-6 form-group">
+			<label for="Fullname" class="form-label">Fullname* </label>
+			<input type="text" class="form-control" id="fullname" value="" name="fullname" required>
+		</div>
+
+		<div class="col-md-6 form-group">
+			<label for="email" class="form-label">Email* </label>
+			<input type="email" class="form-control" id="email"  value="" name="email" required>
+		</div>
+
+		<div class="col-md-6 form-group">
+			<label for="phone" class="form-label">Phone Number* </label>
+			<input type="text" class="form-control" id="number" value="" name="number"  required>
+		</div>
+
+		<div class="col-6 form-group">
+			<label for="province" class="form-label">Province* </label>
+			<input type="text" class="form-control" id="province" placeholder="Write your province name. " required>
+		</div>
+		<div class="col-6 form-group">
+			<label for="District" class="form-label">District* </label>
+			<input type="text" class="form-control" name="district" value=""  placeholder="write your district name."  required>
+		</div>
+		<div class="col-md-6 form-group">
+			<label for="address" class="form-label">rural/Municipality name* </label>
+			<input type="text" class="form-control" name="municipalityname" value="" placeholder="" required>
+		</div>
+
+		<div class="col-md-6  form-group lastfromform">
+			<label for="address" class="form-label">Ward no/ name* </label>
+			<input type="text" class="form-control" name="wardno" value="" placeholder="please write ward number and name here." required>
+		</div>
+
+
+
+
+
+		<h3 class="second-heading"> Details about your photo/art</h3>
+		<hr>
+
+
+
+		<div class="col-md-6   form-group">
+			<label for="name" class="form-label">Image Title* </label>
+			<input type="text" id="name" class="form-control" placeholder="Name" value="" name="name" required>
+		</div>
+
+		<div class="col-md-6  form-group ">
+			<label for="desc" class="form-label">Image Description* </label>
+			<textarea id="desc" class="form-control" name="desc" value="" rows="2" placeholder="Description" required>
+		</textarea>
+		</div>
+
+		<div class="col-md-6   form-group">
+			<label for="image" class="form-label"> Upload Image* </label>
+			<input type="file" id="image" class="form-control" name="image" value="" required>
+		</div>
+
+
+
+
+		<div class="submitbtn"> <button type="submit" class="btn btn-primary" id="submitbtn">Submit</button> </div>
+
+
+
+
+
+	</form>
+	</div>
+
+
+
+
+	<%- include("partials/footer")-%>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<%- include("partials/header") -%>
+
+<h2 class="mainheading">Uploaded Images</h2>
+<div class="container uploaded-container ">
+
+
+  <div class="row ">
+
+    <% images.forEach(function(item) { %>
+
+    <div class="card col-lg-6">
+        <%  const imagetype = item.img.contentType; %>
+        <%  const imgdata = item.img.data.toString('base64'); %>
+
+      <a href="uploads/<%=item._id%>">
+
+        <img src="data:image/<%=imagetype%>;base64,
+                       <%=imgdata%>" > Click to view photo
+      </a>
+
+      <div class="card-body">
+        <h5 class="card-title"> <b> Image Title: </b> <%= item.name %></h5>
+        <p class="card-text"> <b> Image Description: </b><%= item.desc %></p>
+        <p class="card-text"> <b> Name: </b><%=item.fullname %> </p>
+        <p class="card-text"> <b> Email: </b><%= item.email %> </p>
+        <p class="card-text"> <b> Phone: </b><%=item.number%> </p>
+
+      </div>
+    </div>
+
+    <% }) %>
+
+
+
+
+
+  </div>
+
+
+
+</div>
+
+
+
+
+
+<%- include("partials/footer") -%>
