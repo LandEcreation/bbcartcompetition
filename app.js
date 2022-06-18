@@ -16,7 +16,7 @@ const findOrCreate = require('mongoose-findorcreate');
 const router = require('./routes');
 
 
-mongoose.connect(process.env.MONGO_URL || process.env.MONGO_URL_CLOUD, {
+mongoose.connect((process.env.MONGO_URL || process.env.MONGO_URL_CLOUD),{
   useNewUrlParser: true,
   useUnifiedTopology: true
 }, err => {
