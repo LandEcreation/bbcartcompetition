@@ -16,7 +16,7 @@ const findOrCreate = require('mongoose-findorcreate');
 const router = require('./routes');
 
 
-mongoose.connect(process.env.MONGO_URL || process.env. MONGO_URL_CLOUD, {
+mongoose.connect(process.env.MONGO_URL || process.env.MONGO_URL_CLOUD, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }, err => {
@@ -37,7 +37,7 @@ app.use(bodyParser.json())
 
 app.use(express.static("public"));
 app.set("view engine", "ejs");
-app.use('/', router);
+app.use('', router);
 
 
 
@@ -64,6 +64,11 @@ const upload = multer({
 const imgModel = require('./model/imagemodel');
 
 
+
+
+app.get("/", (req, res) => {
+  res.render("index");
+});
 
 
 app.post('/', upload.single('image'), (req, res, next) => {

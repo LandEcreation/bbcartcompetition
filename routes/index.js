@@ -1,6 +1,11 @@
+
+require('dotenv').config()
+
+
 const express = require("express");
 const session = require("express-session");
 const passport = require("passport");
+const mongoose = require("mongoose");
 const passportLocalMoongoose = require("passport-local-mongoose");
 const alert= require("alert");
 
@@ -37,9 +42,7 @@ passport.deserializeUser(function(user, done) {
 
 
 
-router.get("/", (req, res) => {
-  res.render("index");
-})
+
 
 router.get('/upload', (req, res) => {
   res.render("uploadform");
