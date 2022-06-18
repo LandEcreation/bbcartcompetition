@@ -15,7 +15,7 @@ userSchema.plugin(passportLocalMoongoose);
 /*for findorcreate google auh*/
 
 userSchema.plugin(findOrCreate);
-const  User = new mongoose.model("User", userSchema);
+const User = new mongoose.model("User", userSchema);
 
 
-module.exports  User = ;
+module.exports = User;

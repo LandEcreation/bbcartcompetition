@@ -19,9 +19,9 @@ const router = require('./routes');
 mongoose.connect(process.env.MONGO_URL_CLOUD, {
   useNewUrlParser: true,
   useUnifiedTopology: true
-}), err => {
+}, err => {
   console.log('connected to dB')
-};
+});
 
 
 

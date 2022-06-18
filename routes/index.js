@@ -15,7 +15,7 @@ const User = require('../model/usermodel');
 
 /*this is initial configuration of session*/
 
-
+console.log(process.env.SECRET);
 
 router.use(session({
   secret: process.env.SECRET,
