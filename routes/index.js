@@ -14,6 +14,9 @@ const router = express.Router();
 const User = require('../model/usermodel');
 
 /*this is initial configuration of session*/
+
+
+
 router.use(session({
   secret: process.env.SECRET,
   resave: false,

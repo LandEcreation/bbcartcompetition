@@ -16,12 +16,12 @@ const findOrCreate = require('mongoose-findorcreate');
 const router = require('./routes');
 
 
-mongoose.connect((process.env.MONGO_URL || process.env.MONGO_URL_CLOUD),{
+mongoose.connect(process.env.MONGO_URL_CLOUD, {
   useNewUrlParser: true,
   useUnifiedTopology: true
-}, err => {
+}), err => {
   console.log('connected to dB')
-});
+};
 
 
 
@@ -41,7 +41,7 @@ app.use('', router);
 
 
 
-const  multer = require('multer');
+const multer = require('multer');
 
 
 /*here multer is for file uploading*/
@@ -84,7 +84,7 @@ app.post('/', upload.single('image'), (req, res, next) => {
     }
   }
   imgModel.create(obj, (err, item) => {
-/*    console.log(obj);*/
+    /*    console.log(obj);*/
     if (err) {
       console.log(err);
     } else {
@@ -104,10 +104,10 @@ app.get("/gallery", (req, res) => {
         console.log(err);
         res.status(500).send('An error occurred', err);
       } else {
-      /*  console.log(images);*/
+        /*  console.log(images);*/
 
         res.render('gallery', {
-        images: images
+          images: images
         });
       }
     });
@@ -169,8 +169,6 @@ app.get("/uploads/:uploadId", (req, res) => {
   });
 
 });
-
-
 
 
 
